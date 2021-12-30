@@ -11,6 +11,11 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* What is this doing? flex-wrap: wrap; */
+  align-items: center;
   background-color: darkslategrey;
   color: darkturquoise;
 }
@@ -29,6 +34,21 @@ nav {
   flex-direction: row;
 }
 
-li {
-  display: inline;
+nav a {
+  text-decoration: none;
+  color: darkturquoise;
+  margin-right: 10px;
+  padding: 0 20px;
+}
+
+.hero {
+  background-image: url(./images/Appalachia.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  max-width: 1400px;
+}
+
+.hero h2 {
+  margin-left: 30px;
 }
